@@ -1,10 +1,10 @@
 // DB Config
 module.exports = {
-    HOST: "34.151.88.87",
-    USER: "postgres",
-    PASSWORD: "root",
-    DB: "my_database",
-    dialect: "postgres",
+  HOST: `${dbSocketPath}/${process.env.react-postgres:australia-southeast1:postgres14}`,
+  USER: process.env.DB_USER,
+  PASSWORD: process.env.DB_PASS,
+  DB: process.env.DB_NAME,
+  dialect: "postgres",
     /* pool is optional, it will be used for Sequelize connection pool configuration */
     pool: {
       max: 5,
