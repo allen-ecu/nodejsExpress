@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 require("./app/routes/tutorial.routes")(app);
 
 // set port, listen for requests
-const PORT = process.env.DB_SOCKET_PATH || '/cloudsql';
+const PORT = process.env.DB_SOCKET_PATH || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
